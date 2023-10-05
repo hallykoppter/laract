@@ -21,6 +21,10 @@ Route::get('/', function() {
     return Inertia::render('Landing');
 })->name('Home');
 
+Route::get('/about', function() {
+    return Inertia::render('About');
+});
+
 // Route::get('/', function () {
 //     return Inertia::render('Welcome', [
 //         'canLogin' => Route::has('login'),

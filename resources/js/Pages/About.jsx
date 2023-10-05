@@ -1,15 +1,14 @@
 import React from "react";
-import { Head } from "@inertiajs/react";
 import Layout from "../Components/Layout";
 
-const Landing = () => {
+const About = () => {
     return (
         <div className="flex justify-center content-center text-3xl">
-            Dashboard
+            Ini Halaman About
         </div>
     );
 };
 
-Landing.layout = (page) => <Layout children={page} title="Home" />;
+About.layout = (page) => <Layout children={page} title="About" />;
 
-export default Landing;
+export default About;
