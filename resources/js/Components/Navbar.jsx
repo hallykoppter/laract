@@ -7,10 +7,16 @@ export default function Navbar() {
     const { url } = usePage();
 
     return (
-        <div className="navbar bg-base-100">
+        <div className="navbar bg-base-100 align-middle my-auto">
             <div className="flex-1">
-                <Link href="/" className="btn btn-ghost normal-case text-xl">
-                    Hally<mark>Koppter</mark>
+                <Link
+                    href="/"
+                    className="hover:bg-inherit flex normal-case text-3xl font-extrabold"
+                >
+                    <Logo />
+                    <p className="inline-block align-middle mx-2 my-auto">
+                        HallyKoppter
+                    </p>
                 </Link>
             </div>
             <div className="flex-none">
@@ -44,5 +50,15 @@ export default function Navbar() {
                 </ul>
             </div>
         </div>
+    );
+}
+
+function Logo() {
+    return (
+        <img
+            className="my-auto mx-2 w-10 rounded-full"
+            src="/img/HALLYKOPPTER - White.png"
+            alt="Logo"
+        />
     );
 }
